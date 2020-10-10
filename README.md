@@ -1,12 +1,16 @@
 # clj-mocker
 
 This package sends 1,000,000 mock records to Elasticsearch endpoint URL.
+
 Configuration file not yet provided. You can configure it inside core.clj file.
 
 ## Installation
 
-You will need: Java, Clojure, Leinengen
-You can install Leinengen from web (google it). It will provide Clojure wich will be used during compilation.
+You will need: Java, Clojure, Leinengen.
+
+You can install Leinengen from web (google it).
+
+It will provide Clojure wich will be used during compilation.
 
 To install dependencies use
 
