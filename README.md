@@ -1,6 +1,6 @@
 # clj-mocker
 
-This package sends 1,000,000 mock records to Elasticsearch endpoint URL.
+This package sends mock records to Elasticsearch endpoint URL.
 
 Configuration file not yet provided. You can configure it inside core.clj file.
 
