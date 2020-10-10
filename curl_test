@@ -1,0 +1,6 @@
+#! /bin/bash
+pre
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{"query":{"match_all":{}}}' \
+  http://localhost:9200/index1/_count | json_pp 
