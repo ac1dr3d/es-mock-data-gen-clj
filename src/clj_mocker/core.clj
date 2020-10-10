@@ -13,8 +13,8 @@
   "I don't do a whole lot ... yet."
   [& args]
   (let [
-        max_users 1000
-        max_events 1000
+        max_users 10
+        max_events 10
         now (l/local-now)
         week (t/minus now (t/days 7))
         time_range (- (c/to-long now) (c/to-long week))
@@ -31,7 +31,7 @@
                       ev_time (rand-int time_range)
                       d {
                          :unique_visitor_id user_id
-                         :server_date ev_time
+                         :server_date (- (c/to-long now) ev_time)
                          }
                       ]
                   (client/post "http://localhost:9200/index1/_doc"
