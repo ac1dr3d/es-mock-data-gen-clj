@@ -1,5 +1,4 @@
 #! /bin/bash
-pre
 curl --header "Content-Type: application/json" \
   --request POST \
   --data '{"query":{"match_all":{}}}' \
